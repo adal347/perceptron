@@ -43,9 +43,9 @@ int main(int argc, char* argv[]) {
 
   int d, m, n;
   static int MAX_ITER = 100;
-  static double LEARNING_RATE = 0.1; 
+  static double LEARNING_RATE = 0.1;
   static int theta = 0;
-  
+
   //Get rid of the spaces
   while (getline(cin,line)){
       lines.push_back(inputReg(line));
@@ -94,7 +94,7 @@ int main(int argc, char* argv[]) {
   y=0;
   for(i = 3 + m; i < lines.size(); i++){
       vector<double> vect = typeValues(lines[i]);
-      for(int j=0; j < d; j++) tests[y][j] = vect[j];      
+      for(int j=0; j < d; j++) tests[y][j] = vect[j];
       y++;
   }
 
